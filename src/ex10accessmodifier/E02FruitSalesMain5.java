@@ -46,8 +46,8 @@ class FruitBuyer5{
 		numOfApple = _numOfApple;
 		
 	}
-	public void buyApple(FruitSeller seller, int money) {
-		numOfApple += seller.saleApple(money);
+	public void buyApple(FruitSeller5 seller1, int money) {
+		numOfApple += seller1.saleApple(money);
 		myMoney -= money;
 	}
 	
@@ -66,12 +66,12 @@ public class E02FruitSalesMain5 {
 		 초기화 메소드를 정의하였으므로, 각각 성격이 다른 객체들을 생성할 수 있다. 
 		 */
 		//판매자 1 : 보유갯수가 100개 단가 1000원
-		FruitSeller seller1 = new FruitSeller(0, 100, 1000);
+		FruitSeller5 seller1 = new FruitSeller5(0, 100, 1000);
 		
 		//판매자 2 : 보유갯수 80개 단가 500원
-		FruitSeller seller2 = new FruitSeller(0, 80, 500);
+		FruitSeller5 seller2 = new FruitSeller5(0, 80, 500);
 		
-		FruitBuyer buyer = new FruitBuyer();
+		FruitBuyer5 buyer = new FruitBuyer5();
 		buyer.initMembers(10000, 0);
 		
 		
@@ -98,14 +98,18 @@ public class E02FruitSalesMain5 {
 		  "정보 은닉" 하도록 규정하고 있다.
 		 */
 		
-//		seller1.myMoney += 1000; //판매자1에게 1000원을 지불하고
-//		seller1.numOfApple -= 50;// 사과 50개를 구매했다.
-//		buyer.numOfApple += 50;
-//		
-//		seller2.myMoney += 1000;//판매자2에게 1000을 지불하고
-//		seller2.numOfApple -= 70;//사과 70개를 구매했다
-//		buyer.numOfApple += 70; //하지만 구매자의 보유금맥은 차감되지 않았다.
-//		
+		/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+		
+		seller1.myMoney += 1000; //판매자1에게 1000원을 지불하고
+		seller1.numOfApple -= 50;// 사과 50개를 구매했다.
+		buyer.numOfApple += 50;
+		
+		seller2.myMoney += 1000;//판매자2에게 1000을 지불하고
+		seller2.numOfApple -= 70;//사과 70개를 구매했다
+		buyer.numOfApple += 70; //하지만 구매자의 보유금맥은 차감되지 않았다.
+		
+		/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+		
 		System.out.println("구매행위가 일어난 후의 상태");
 		seller1.showSaleResult();
 		seller2.showSaleResult();

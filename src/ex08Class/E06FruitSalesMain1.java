@@ -7,7 +7,7 @@ class FruitSeller{
 	final int APPLE_RRICE = 1000; //사과의 단가
 	/*
 	 클래스에서 맴버상수를 선언하는 경우 반드시 선언과 동시에
-	 초기화 해야한다. 만약 초기화를 별도로 진행하면 에러가 발생한다.( 복십시 1000부분을 제거해 볼 것)
+	 초기화 해야한다. 만약 초기화를 별도로 진행하면 에러가 발생한다.
 	 */
 	
 	//판매자가 사과를 판매하는 행위를 표현한 멤버메소드
@@ -49,7 +49,7 @@ class FruitBuyer{
 	}
 	
 	public void showBuyResult() {
-		System.out.println("[구매자] 연재잔액 : " + myMoney);
+		System.out.println("[구매자] 현재잔액 : " + myMoney);
 		System.out.println("[구매자] 사과갯수 : " + numOfApple);
 	}
 }

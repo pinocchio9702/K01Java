@@ -6,14 +6,6 @@ class FruitSeller{
 	 private int myMoney; //판매 수익
 	 private final int APPLE_PRICE; //사과의 단가
 	
-	/*
-	 상수는 값이 변경이 불가능하고, 단 한번만 초기화되기 때문에
-	 일반적인 맴버메소드에서는 초기화 할 수 없다.
-	 하지만 생성자 메소드에서는 초기화가 가능하다.
-	 마음대로 호출할 수 없고, 객체생성시 단 한번만 호출되는 
-	 특성이 동일하기 때문에 한번 이상 초기화 하지 않음이 보장되기
-	 때문이다.
-	 */
 	public FruitSeller(int money, int appleNum, int price) {
 		myMoney = money;
 		numOfApple = appleNum;

@@ -1,7 +1,7 @@
 package ex11static;
 /*
   Static 블럭
-  		: 동일 클래스안의 main메도스보다 먼저 실행되는 블럭으로
+  		: 동일 클래스안의 main메소드보다 먼저 실행되는 블럭으로
   		main매소드의 실행코드가 없어도 먼저 실행된다.
   		단, 다른 클래스에 main이 있는 경우에는 main이 순차적으로
   		실행되다가 static블럭이 있는 클래스가 객체화 될때 실행된다.
@@ -10,7 +10,7 @@ package ex11static;
 
 public class StaticBlock {
 	
-	//이스턴스형 맴버
+	//인스턴스형 맴버
 	int instanceVar;
 	void instanceMethod() {}
 	
