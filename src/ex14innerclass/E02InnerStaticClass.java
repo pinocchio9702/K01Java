@@ -34,7 +34,7 @@ class OuterClass {
 		System.out.println("외부 클래스의 정적메소드 호출됨");
 		
 		/*
-		 외부클래스의 정적멤버메소드에서는 내부클랫으이 정적멤버만 접근할 수 있다.
+		 외부클래스의 정적멤버메소드에서는 내부클래스의 정적멤버만 접근할 수 있다.
 		 (Method영역에서는 Heap영역을 참조할 수 있다.)
 		 */
 		//InnerStaticClass.innerMemberVar = 102;
